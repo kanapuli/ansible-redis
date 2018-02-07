@@ -1,0 +1,7 @@
+--- 
+redis_service_name: redis
+conf_path: /etc/redis.conf
+
+redhat_pkg:
+  - libselinux-python
+  - redis
