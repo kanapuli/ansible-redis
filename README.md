@@ -1,14 +1,13 @@
 # ansible-redis
-=======
 
 ansible-redis helps to install redis in RHEL Linux servers and manage them.The default values of the roles can be overridden by the user which reflects in redis.conf file.
 
 ## Requirements
-=======
+
 The role requires minimum ansible version of 2.0 and python to be installed in the remote servers.
 
 ## Role Default Variable
-=======
+
 The following variables can be customized according to the user needs
 
 ```
@@ -35,11 +34,11 @@ The following variables can be customized according to the user needs
 
 
 ## Supported OS Family
-=========
+
 Redhat Linux
 
 ## How to use the role
-=========
+
 The example code is as follows,
 
 ```
