@@ -1,0 +1,17 @@
+---
+  galaxy_info:
+    author: "Athavan Kanapuli"
+    company: "Interflow"
+    license: MIT
+    min_ansible_version: 2.4.0
+    platforms:
+      - name: Ubuntu
+        versions:
+          - precise
+      - name: EL
+        versions:
+          - 7
+    categories:
+      - database
+      - database:nosql
+    dependencies: []

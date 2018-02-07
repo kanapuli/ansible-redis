@@ -16,6 +16,7 @@
   redis_max_memory: 1024
   redis_max_memory_policy: volatile-lru
   redis_append_fsync: everysec
+  # http://redis.io/topics/faq
   redis_overcommit_memory: 1
   # Set the Following Values if redis_role is slave
   redis_master_ip: 0.0.0.0
