@@ -12,10 +12,12 @@
   redis_role: master
   redis_requirepass: false
   redis_pass: None
+  redis_protected_mode: yes
   redis_max_client: 1000
   redis_max_memory: 1024
   redis_max_memory_policy: volatile-lru
   redis_append_fsync: everysec
+  redis_timeout: 0
   # http://redis.io/topics/faq
   redis_overcommit_memory: 1
   # Set the Following Values if redis_role is slave
