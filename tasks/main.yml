@@ -12,12 +12,14 @@
     yum: name={{ item }} state=present
     with_items: "{{ redhat_pkg }}"
     when: ansible_os_family == "RedHat"
+
+  - name: Copy Customized redis.conf file
+    template: src=redis.conf dest={{ conf_path }}
     notify:
       - Restart Redis Server
-
 
   - name: Set the OverCommit value
     sysctl: name=vm.overcommit_memory value={{ redis_overcommit_memory }} state=present
 
-  - name: Restart the Redis service
+  - name: Start the Redis service
     service: name={{ redis_service_name }} state=started enabled=yes
