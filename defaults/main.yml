@@ -1,0 +1,28 @@
+---
+  redis_bind_ip: 127.0.0.1
+  redis_port: 6379
+  redis_log_file: /var/log/redis
+  redis_dbs: 16
+  redis_db_save_time:
+    - [900,1]
+    - [300,10]
+    - [60,10000]
+  redis_db_file_name: dump.rdb
+  redis_db_dir: /var/lib/redis
+  redis_role: master
+  redis_requirepass: false
+  redis_pass: None
+  redis_max_client: 1000
+  redis_max_memory: 1024
+  redis_max_memory_policy: volatile-lru
+  redis_append_fsync: everysec
+  redis_overcommit_memory: 1
+  # Set the Following Values if redis_role is slave
+  redis_master_ip: 0.0.0.0
+  redis_master_port: 6379
+  redis_master_auth: None
+  #Logging defaults
+  redis_syslog_enabled: no
+  # redis_syslog_faiclity must be "user" or between "local0" and "local7"
+  # https://en.wikipedia.org/wiki/Syslog
+  redis_syslog_facility: "local0"
